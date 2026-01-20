@@ -7,31 +7,31 @@ export function ApproachOverview() {
       number: '01',
       icon: ListChecks,
       title: '業務の棚卸し',
-      description: '誰が・何を・どこでやっているか',
+      description: '業務内容の透明性を高め、判断に使える形にします。',
     },
     {
       number: '02',
       icon: Target,
       title: '判断ポイントの明確化',
-      description: 'どの数字を見て、何を決めるのか',
+      description: 'どの情報・数字を見て、何を決めるのかを明確にします。',
     },
     {
       number: '03',
       icon: Database,
       title: 'データの一元化',
-      description: '情報が散らばらない状態をつくる',
+      description: '情報を経営資産としてまとめ、探さずに使える状態をつくります。',
     },
     {
       number: '04',
       icon: Zap,
-      title: '自動化による二度手間の解消',
-      description: '入力すれば、自動で共有・通知される',
+      title: '自動化による流れの統一',
+      description: '一度の入力が、共有・通知・記録まで自然につながる形に整えます。',
     },
     {
       number: '05',
       icon: Heart,
-      title: '現場にやさしい定着設計',
-      description: 'ITが苦手でも使える言葉・温度感',
+      title: '定着を前提にした設計',
+      description: '必要最小限の入力で、自然と使われ続ける形にします。',
     },
   ];
 
@@ -43,17 +43,29 @@ export function ApproachOverview() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Entimeが考えるDXは、<br />
-            「二度手間をなくすこと」から始まります。
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+            Entimeが考えるDXの目的は、<br />
+            情報を経営資産に変えることです。
           </h2>
-          <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-            DXはツール導入ではなく、<br />
-            業務と情報の流れを一本にすることです。
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed mb-6">
+            DXは、ツールを導入することではありません。<br />
+            現場で生まれる情報を整理し、<br />
+            判断と改善に使える形へと整えることです。
+          </p>
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed mb-6">
+            現場で情報が生まれ、<br />
+            経営の判断に使われ、<br />
+            その判断が現場の改善につながる。
+          </p>
+          <p className="text-xl font-bold text-gray-900 max-w-3xl mx-auto">
+            この循環そのものが、<br />
+            売上を生み続ける経営資産です。
           </p>
         </motion.div>
+
+        <hr className="border-gray-300 max-w-xs mx-auto mb-12" />
 
         {/* Visual Label */}
         <div className="text-center mb-8">
@@ -94,19 +106,24 @@ export function ApproachOverview() {
           ))}
         </div>
 
+        <hr className="border-gray-300 max-w-xs mx-auto mb-12" />
+
         {/* Bottom Statement */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
-          className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-8 text-center max-w-4xl mx-auto"
+          className="text-center max-w-4xl mx-auto"
         >
-          <p className="text-xl text-gray-900 leading-relaxed">
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
             Entimeは、<br />
-            「一緒に考える」だけで終わりません。<br />
-            現場と同じスピードで走りながら、<br />
-            使われ続ける形まで <span className="font-bold text-blue-600">絆走（ばんそう）</span>します。
+            「一緒に考える」だけで終わりません。
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            現場と経営の間を何度も往復しながら、<br />
+            改善の循環が回り続ける状態まで<br />
+            <span className="font-bold text-blue-600 text-xl">絆走（ばんそう）</span>します。
           </p>
         </motion.div>
       </div>
