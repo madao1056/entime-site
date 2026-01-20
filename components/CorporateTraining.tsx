@@ -3,11 +3,11 @@ import { Building2, Clock, MessageSquare, TrendingUp, Sparkles } from 'lucide-re
 
 export function CorporateTraining() {
   const targetCompanies = [
-    '社員◯名以上',
-    'アナログ文化が根強い',
-    'ITへの苦手意識が強い',
-    '業務が属人化している',
-    '数字を見ているが、判断に使えていない',
+    '社員5名以上の組織（助成金活用の対象となる規模）',
+    '業務の判断が人に依存し、数字で判断できる状態になっていない',
+    '情報や数字はあるが、必要なときにすぐ見える状態ではない',
+    '現場と経営で、同じ情報をもとに判断できていない',
+    '数字を確認しているが、次の行動や改善につながっていない',
   ];
 
   const afterStates = [
