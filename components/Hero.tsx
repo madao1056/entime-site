@@ -50,15 +50,15 @@ export function Hero() {
             <ul className="space-y-3 mb-8">
               <li className="flex items-center gap-3 text-base sm:text-lg text-gray-700">
                 <div className="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"></div>
-                生きた数字になるDX支援
+                「判断」に直結する数字
               </li>
               <li className="flex items-center gap-3 text-base sm:text-lg text-gray-700">
                 <div className="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"></div>
-                業務効率化を実現する伴走型
+                「二度手間」ゼロの仕組み
               </li>
               <li className="flex items-center gap-3 text-base sm:text-lg text-gray-700">
                 <div className="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"></div>
-                現場起点の業務改善
+                現場が自走する「絆走」
               </li>
             </ul>
 
