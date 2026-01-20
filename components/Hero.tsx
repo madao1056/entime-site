@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Hero() {
   const scrollToCTA = () => {
@@ -18,13 +17,18 @@ export function Hero() {
   };
 
   return (
-    <section className="relative pt-24 pb-20 sm:pt-32 sm:pb-28 overflow-hidden">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-50 via-white to-white -z-10"></div>
+    <section 
+      className="relative pt-24 pb-20 sm:pt-32 sm:pb-28 overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: `linear-gradient(to right, rgba(255,255,255,0.95), rgba(255,255,255,0.7)), url('https://images.unsplash.com/photo-1759661966728-4a02e3c6ed91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGRhdGElMjB2aXN1YWxpemF0aW9uJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2ODMxNTEzNnww&ixlib=rb-4.1.0&q=80&w=1920')`
+      }}
+    >
+      {/* Background Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-50/50 via-white/80 to-white/90 -z-10"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left Column - Content */}
+        <div className="max-w-3xl">
+          {/* Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -81,22 +85,6 @@ export function Hero() {
               >
                 資料で整理する
               </button>
-            </div>
-          </motion.div>
-
-          {/* Right Column - Visual */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative"
-          >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1759661966728-4a02e3c6ed91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGRhdGElMjB2aXN1YWxpemF0aW9uJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2ODMxNTEzNnww&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="データ可視化"
-                className="w-full h-auto"
-              />
             </div>
           </motion.div>
         </div>
