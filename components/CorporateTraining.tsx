@@ -47,8 +47,8 @@ export function CorporateTraining() {
           className="text-center mb-16"
         >
           <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            アナログ文化が根強い組織こそ、<br />
-            最初に取り組んでほしいDX研修です。
+            一部デジタル化は進んでいるのに、<br />
+            現場と経営のズレが縮まらない会社へ。
           </h3>
           <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full mt-4">
             <Building2 size={16} />
@@ -66,14 +66,15 @@ export function CorporateTraining() {
             {/* Introduction */}
             <div className="mb-8">
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                「ITが苦手」「専門用語が分からない」<br />
-                そんな組織でも大丈夫です。
+                多くの組織では、<br />
+                情報や数字は存在しています。<br />
+                ただ、判断に使える形にはなっていません。
               </p>
               <p className="text-lg text-gray-800 leading-relaxed">
                 この研修では、<br />
                 ツールの使い方ではなく、<br />
-                <span className="font-bold text-blue-600">業務と数字のつなぎ方</span>を、<br />
-                経営と現場の共通言語にしていきます。
+                業務の中で生まれる情報と数字を整え、<br />
+                <span className="font-bold text-blue-600">現場と経営の両方で判断が揃う状態</span>をつくっていきます。
               </p>
             </div>
 
