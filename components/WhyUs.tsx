@@ -1,23 +1,38 @@
 import { motion } from 'framer-motion';
-import { X, Check } from 'lucide-react';
+import { MessageSquare, Coins, Zap } from 'lucide-react';
 
 export function WhyUs() {
-  const comparisons = [
+  const qaPairs = [
     {
-      aspect: '手間',
-      others: '入力して、さらに報告する二度手間',
-      us: '入力すれば自動で通知、二度手間なし',
+      icon: MessageSquare,
+      question: 'ITやDXの専門用語が分からなくても、DXは進められますか？',
+      answer: {
+        intro: '進められます。',
+        main: 'DXが止まる理由の多くは、技術ではなく「現場と経営の言葉が噛み合っていないこと」にあります。',
+        approach: 'Entimeでは、専門用語をできるだけ使わず、現場で使われている言葉を起点に、判断につながる形へと設計していきます。',
+        conclusion: '技術は裏側に。判断は表に。それが、使われ続けるDXです。'
+      }
     },
     {
-      aspect: 'コスト',
-      others: '高額な月額課金',
-      us: '無料〜低コストから始められる設計',
+      icon: Coins,
+      question: 'なぜ、最初から大きなコストをかけなくても進められるのですか？',
+      answer: {
+        intro: 'Entimeでは、複数のツールを使い分けるのではなく、業務・情報・通知を一つの基盤に集約します。',
+        main: 'その結果、無料から始められるプランや、定額・低コストの範囲でDXを進めることが可能です。',
+        approach: '',
+        conclusion: '安くするためではなく、無駄を生まない設計をしているだけです。'
+      }
     },
     {
-      aspect: '言葉',
-      others: '専門用語が多く、現場が置いていかれる',
-      us: '専門用語を使わず、現場の言葉で絆走',
-    },
+      icon: Zap,
+      question: '自動化や通知は、他のツールや会社でもできるのでは？',
+      answer: {
+        intro: 'その通りです。',
+        main: 'Entimeが行っているのは、自動化そのものではなく、「何を、誰が、どう判断するか」の設計です。',
+        approach: '自動で届いても、判断できなければ意味がありません。',
+        conclusion: 'Entimeは、判断が変わるところまでをDXと考えています。'
+      }
+    }
   ];
 
   return (
@@ -31,13 +46,13 @@ export function WhyUs() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            なぜEntimeが選ばれるのか
+            EntimeのDXが、他と違う理由
           </h2>
         </motion.div>
 
-        {/* Comparison Cards */}
-        <div className="max-w-5xl mx-auto space-y-6 mb-12">
-          {comparisons.map((item, index) => (
+        {/* Q&A Cards */}
+        <div className="max-w-4xl mx-auto space-y-8">
+          {qaPairs.map((qa, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -46,48 +61,48 @@ export function WhyUs() {
               transition={{ delay: index * 0.1 }}
               className="bg-white rounded-xl shadow-md overflow-hidden"
             >
-              <div className="grid md:grid-cols-2 gap-0">
-                {/* Left - Others */}
-                <div className="p-6 bg-red-50 border-r border-gray-200">
-                  <div className="text-xs font-bold text-red-700 mb-3 uppercase tracking-wide">
-                    よくあるDX支援
+              <div className="p-8">
+                {/* Question */}
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <qa.icon size={20} className="text-blue-600" />
                   </div>
-                  <div className="flex items-start gap-3">
-                    <X size={20} className="text-red-500 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-700">{item.others}</p>
-                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 leading-relaxed">
+                    {qa.question}
+                  </h3>
                 </div>
 
-                {/* Right - Us */}
-                <div className="p-6 bg-green-50">
-                  <div className="text-xs font-bold text-green-700 mb-3 uppercase tracking-wide">
-                    Entime
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Check size={20} className="text-green-600 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-900 font-medium">{item.us}</p>
-                  </div>
+                {/* Answer */}
+                <div className="ml-14 space-y-4">
+                  {qa.answer.intro && (
+                    <p className="text-lg text-gray-900 font-medium">
+                      {qa.answer.intro}
+                    </p>
+                  )}
+                  {qa.answer.main && (
+                    <p className="text-gray-700 leading-relaxed">
+                      {qa.answer.main}
+                    </p>
+                  )}
+                  {qa.answer.approach && (
+                    <p className="text-gray-700 leading-relaxed">
+                      {qa.answer.approach}
+                    </p>
+                  )}
+                  {qa.answer.conclusion && (
+                    <p className="text-gray-900 font-bold leading-relaxed">
+                      {qa.answer.conclusion}
+                    </p>
+                  )}
                 </div>
               </div>
+              
+              {index < qaPairs.length - 1 && (
+                <hr className="border-gray-200" />
+              )}
             </motion.div>
           ))}
         </div>
-
-        {/* Bottom Message */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
-          <div className="inline-block bg-blue-600 text-white rounded-xl px-8 py-6 max-w-3xl">
-            <p className="text-xl font-medium leading-relaxed">
-              DXは、<br />
-              「すごいシステム」より<br />
-              「使い続けられる仕組み」が成果を生みます。
-            </p>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
