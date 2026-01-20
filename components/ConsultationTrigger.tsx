@@ -6,22 +6,22 @@ export function ConsultationTrigger() {
     {
       step: "01",
       title: "現状のヒアリング",
-      description: "専門用語は使いません",
+      description: "専門用語は使いません。今、どのように仕事をしているかを伺います。",
     },
     {
       step: "02",
       title: "課題の整理",
-      description: "一緒に問題を整理します",
+      description: "何が詰まっているのか、どこで判断が止まっているのかを一緒に整理します。",
     },
     {
       step: "03",
-      title: "未来の業務フローの提示",
-      description: "どう変わるか見える化",
+      title: "未来の業務フローを可視化",
+      description: "改善すると、業務や判断がどう変わるのかを見える形でお伝えします。",
     },
     {
       step: "04",
-      title: "必要な場合のみ、ご提案",
-      description: "無理な営業は行いません",
+      title: "必要な場合のみご提案",
+      description: "無理な営業は行いません。合わない場合は、その場で終えていただいて構いません。",
     },
   ];
 
@@ -40,52 +40,65 @@ export function ConsultationTrigger() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            ITが苦手でも、
-            <br />
-            何から話せばいいか分からなくても大丈夫です。
+            「詳しくなくても大丈夫」<br />
+            そう言われても、不安は残りますよね。
           </h2>
         </motion.div>
 
-        {/* Story Section */}
+        {/* Concerns Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8 sm:p-12 mb-16 max-w-4xl mx-auto"
+          className="max-w-3xl mx-auto mb-12"
         >
-          <div className="flex items-start gap-6 mb-6">
-            <div className="w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center flex-shrink-0">
-              <Award size={24} className="text-yellow-800" />
-            </div>
-            <div>
-              <ul className="text-lg text-gray-700 space-y-3">
-                <li className="flex items-start gap-2">
-                  <span className="text-gray-400">•</span>
-                  <span>IT用語が分からない</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gray-400">•</span>
-                  <span>パソコンが正直苦手</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gray-400">•</span>
-                  <span>スプレッドシートも新しいと感じる</span>
-                </li>
-              </ul>
-            </div>
+          <ul className="text-lg text-gray-700 space-y-3 mb-8">
+            <li className="flex items-start gap-2">
+              <span className="text-gray-400">•</span>
+              <span>IT用語がよく分からない</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-gray-400">•</span>
+              <span>パソコン操作に自信がない</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-gray-400">•</span>
+              <span>AIと聞くと、正直まだハードルが高く感じる</span>
+            </li>
+          </ul>
+          
+          <p className="text-lg text-gray-700 mb-8">
+            そんな状態のまま、<br />
+            「何から話せばいいか分からない」<br />
+            という方も少なくありません。
+          </p>
+          
+          <p className="text-xl text-gray-900 font-medium mb-8">
+            それでも問題ありません。
+          </p>
+          
+          <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8 mb-8">
+            <p className="text-lg text-gray-700 mb-4">
+              実際に、
+            </p>
+            <p className="text-lg text-gray-900 font-bold mb-4">
+              ITやAIに苦手意識を持った状態からスタートし、<br />
+              業務改善コンテスト（MVP）を獲得した企業もあります。
+            </p>
           </div>
-          <p className="text-xl text-gray-900 font-medium text-center mt-8">
-            そんな状態からスタートし、
-            <br />
-            <span className="text-green-600 font-bold">
-              業務改善コンテスト（MVP）
-            </span>
-            を取った企業もあります。
+          
+          <p className="text-lg text-gray-700 mb-4">
+            やっていただくのは、たった一つ。
+          </p>
+          <p className="text-xl text-gray-900 font-bold">
+            「今のやり方を、そのまま聞かせてください。」
           </p>
         </motion.div>
+
+        <hr className="border-gray-300 max-w-xs mx-auto mb-12" />
 
         {/* Flow */}
         <motion.div
@@ -107,7 +120,7 @@ export function ConsultationTrigger() {
                   <h4 className="font-bold text-gray-900 mb-2">
                     {step.title}
                   </h4>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-gray-600 leading-relaxed">
                     {step.description}
                   </p>
                 </div>
@@ -123,12 +136,14 @@ export function ConsultationTrigger() {
             ))}
           </div>
 
-          {/* Note */}
-          {/* <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 text-center max-w-2xl mx-auto mb-8">
-            <p className="text-gray-800">
-              ※無理な営業は行いません。
+          <hr className="border-gray-300 max-w-xs mx-auto mb-12" />
+
+          <div className="text-center mb-8">
+            <p className="text-xl text-gray-900 font-bold">
+              まずは、<br />
+              「今のやり方を話してみる」だけで大丈夫です。
             </p>
-          </div> */}
+          </div>
 
           <div className="text-center">
             <button
