@@ -14,11 +14,11 @@ export default function App() {
       <Header />
       <Hero />
       <PainPoints />
+      <CaseStudies />
       <ApproachOverview />
       <ServicesIntro />
       <ConsultationTrigger />
       <WhyUs />
-      <CaseStudies />
       <FinalCTA />
     </div>
   );
