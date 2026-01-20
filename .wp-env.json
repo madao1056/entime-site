@@ -1,0 +1,19 @@
+{
+  "core": "WordPress/WordPress#6.4",
+  "plugins": [],
+  "themes": [
+    "./wordpress/wp-content/themes/vite-theme"
+  ],
+  "port": 8888,
+  "env": {
+    "development": {
+      "port": 8888
+    },
+    "tests": {
+      "port": 8889
+    }
+  },
+  "mappings": {
+    "wp-content/themes/vite-theme": "./wordpress/wp-content/themes/vite-theme"
+  }
+}
