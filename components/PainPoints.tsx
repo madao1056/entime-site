@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { TrendingUp, Search, Users, Package, RefreshCcw } from 'lucide-react';
 
 export function PainPoints() {
   const problems = [
