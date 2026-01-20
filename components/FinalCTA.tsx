@@ -1,5 +1,5 @@
-import { motion } from 'motion/react';
-import { Download, FileText, Shield, Clock } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Download, FileText, Shield } from 'lucide-react';
 import { useState } from 'react';
 
 export function FinalCTA() {

@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { ListChecks, Target, Database, Zap, Heart } from 'lucide-react';
 
 export function ApproachOverview() {

@@ -1,6 +1,5 @@
-import { motion } from 'motion/react';
-import { CheckCircle2, Building2, Clock, MessageSquare, TrendingUp, Sparkles } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { motion } from 'framer-motion';
+import { Building2, Clock, MessageSquare, TrendingUp, Sparkles } from 'lucide-react';
 
 export function CorporateTraining() {
   const targetCompanies = [

@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { X, Check } from 'lucide-react';
 
 export function WhyUs() {

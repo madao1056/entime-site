@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { User, Briefcase, UserCheck } from 'lucide-react';
 
 export function IndividualCourse() {

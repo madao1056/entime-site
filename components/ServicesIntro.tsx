@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Building2, User } from 'lucide-react';
 import { useState } from 'react';
 import { CorporateTraining } from './CorporateTraining';

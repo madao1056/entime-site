@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Clock, MessagesSquare, AlertCircle, RefreshCcw } from 'lucide-react';
 
 export function PainPoints() {
