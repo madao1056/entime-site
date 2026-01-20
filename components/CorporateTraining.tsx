@@ -13,19 +13,19 @@ export function CorporateTraining() {
   const afterStates = [
     {
       icon: Clock,
-      text: '毎日17:30に、必要な数字が自動で届く',
+      text: '毎日17:30に、判断に必要な数字が自動で届く',
     },
     {
       icon: MessageSquare,
-      text: '翌朝の朝礼で、数字をもとに会話が始まる',
+      text: '翌朝の朝礼で、数字をもとにした会話が自然に始まる',
     },
     {
       icon: TrendingUp,
-      text: '「次に何を改善するか」が自然に決まる',
+      text: '感覚ではなく、数字をもとに「次に何を改善するか」が決まる',
     },
     {
       icon: Sparkles,
-      text: 'DXが"特別な仕事"ではなく、日常になる',
+      text: '業務改善やDXが、特別な取り組みではなく、日々の判断として定着している',
     },
   ];
 
