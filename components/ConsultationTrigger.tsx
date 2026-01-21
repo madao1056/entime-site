@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Award, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export function ConsultationTrigger() {
   const flowSteps = [
