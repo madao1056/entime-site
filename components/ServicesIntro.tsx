@@ -21,13 +21,13 @@ export function ServicesIntro() {
           </h2>
           
           {/* Tabs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-3xl mx-auto">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-0 max-w-3xl mx-auto">
             <button
               onClick={() => setActiveTab('corporate')}
-              className={`flex items-center gap-3 rounded-lg px-6 py-4 flex-1 w-full sm:w-auto transition-all ${
+              className={`flex items-center gap-3 px-6 py-4 flex-1 w-full sm:w-auto transition-all ${
                 activeTab === 'corporate'
-                  ? 'bg-blue-600 text-white border-2 border-blue-600 shadow-lg'
-                  : 'bg-blue-50 text-gray-900 border-2 border-blue-200 hover:border-blue-400'
+                  ? 'bg-blue-600 text-white border-2 border-blue-600 shadow-lg rounded-t-lg sm:rounded-tl-lg sm:rounded-tr-none'
+                  : 'bg-gray-100 text-gray-700 border-2 border-gray-200 hover:border-gray-400 rounded-t-lg sm:rounded-tl-lg sm:rounded-tr-none'
               }`}
             >
               <Building2 size={24} className={`flex-shrink-0 ${activeTab === 'corporate' ? 'text-white' : 'text-blue-600'}`} />
@@ -36,10 +36,10 @@ export function ServicesIntro() {
             
             <button
               onClick={() => setActiveTab('individual')}
-              className={`flex items-center gap-3 rounded-lg px-6 py-4 flex-1 w-full sm:w-auto transition-all ${
+              className={`flex items-center gap-3 px-6 py-4 flex-1 w-full sm:w-auto transition-all ${
                 activeTab === 'individual'
-                  ? 'bg-purple-600 text-white border-2 border-purple-600 shadow-lg'
-                  : 'bg-purple-50 text-gray-900 border-2 border-purple-200 hover:border-purple-400'
+                  ? 'bg-purple-600 text-white border-2 border-purple-600 shadow-lg rounded-t-lg sm:rounded-tr-lg sm:rounded-tl-none'
+                  : 'bg-gray-100 text-gray-700 border-2 border-gray-200 hover:border-gray-400 rounded-t-lg sm:rounded-tr-lg sm:rounded-tl-none'
               }`}
             >
               <User size={24} className={`flex-shrink-0 ${activeTab === 'individual' ? 'text-white' : 'text-purple-600'}`} />
@@ -48,8 +48,8 @@ export function ServicesIntro() {
           </div>
         </motion.div>
 
-        {/* Tab Content */}
-        <div className="mt-8">
+        {/* Tab Content with Frame */}
+        <div className="mt-0 bg-gray-50 border-2 border-gray-200 rounded-xl p-8 shadow-inner">
           {activeTab === 'corporate' && <CorporateTraining />}
           {activeTab === 'individual' && <IndividualCourse />}
         </div>
