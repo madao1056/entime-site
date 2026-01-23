@@ -85,8 +85,10 @@ export function ConsultationTrigger() {
               実際に、
             </p>
             <p className="text-lg text-gray-900 font-bold mb-4">
-              ITやAIに苦手意識を持った状態からスタートし、<br />
-              業務改善コンテスト（MVP）を獲得した企業もあります。
+              独学で業務改善に一度つまずいた企業が、<br />
+              自社業務だけでなく、<br />
+              他店舗にも使える「専用マニュアル」を<br />
+              自動生成する仕組みを生み出した事例もあります。
             </p>
           </div>
           

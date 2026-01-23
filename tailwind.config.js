@@ -42,6 +42,23 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        entime: {
+          blue: "#0056D2",
+          navy: "#1A2B4C",
+          slate: "#64748B",
+          bg: {
+            light: "#F8F9FA",
+            white: "#FFFFFF",
+          },
+          text: "#333333",
+        },
+      },
+      fontFamily: {
+        sans: ['Noto Sans JP', 'Inter', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+      },
+      letterSpacing: {
+        tightest: '-0.02em',
       },
       borderRadius: {
         lg: "var(--radius)",
