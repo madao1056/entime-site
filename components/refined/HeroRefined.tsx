@@ -85,19 +85,6 @@ export function HeroRefined() {
                             資料で整理する
                         </motion.button>
                     </div>
-
-                    {/* Trust Badges / Info */}
-                    <div className="mt-16 pt-10 border-t border-gray-100">
-                        <p className="text-sm font-semibold text-[#64748B] uppercase tracking-wider mb-6">
-                            RELIABLE PARTNER FOR YOUR GROWTH
-                        </p>
-                        <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 opacity-60 grayscale">
-                            {/* Logos could go here, for now using text placeholders */}
-                            <span className="text-xl font-bold text-[#1A2B4C]">Business DX</span>
-                            <span className="text-xl font-bold text-[#1A2B4C]">Smart Process</span>
-                            <span className="text-xl font-bold text-[#1A2B4C]">Data Driven</span>
-                        </div>
-                    </div>
                 </motion.div>
             </div>
         </section>

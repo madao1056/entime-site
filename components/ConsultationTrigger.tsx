@@ -69,29 +69,28 @@ export function ConsultationTrigger() {
               <span>AIと聞くと、正直まだハードルが高く感じる</span>
             </li>
           </ul>
-          
+
           <p className="text-lg text-gray-700 mb-8">
             そんな状態のまま、<br />
-            「何から話せばいいか分からない」<br />
+            <span className="font-bold text-gray-900">「何から話せばいいか分からない」</span><br />
             という方も少なくありません。
           </p>
-          
-          <p className="text-xl text-gray-900 font-medium mb-8">
+
+          <p className="text-xl text-gray-900 font-bold mb-8">
             それでも問題ありません。
           </p>
-          
+
           <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8 mb-8">
             <p className="text-lg text-gray-700 mb-4">
               実際に、
             </p>
             <p className="text-lg text-gray-900 font-bold mb-4">
-              独学で業務改善に一度つまずいた企業が、<br />
-              自社業務だけでなく、<br />
+              業務改善に一度つまずいた企業が、自社業務はもちろん、<br />
               他店舗にも使える「専用マニュアル」を<br />
               自動生成する仕組みを生み出した事例もあります。
             </p>
           </div>
-          
+
           <p className="text-lg text-gray-700 mb-4">
             やっていただくのは、たった一つ。
           </p>

@@ -13,19 +13,19 @@ export function IndividualCourse() {
   const afterStates = [
     {
       icon: Eye,
-      text: '事業の状況が、数字として一目で把握できている',
+      text: '事業の状況が、<span className="font-bold">数字として一目で把握できている</span>',
     },
     {
       icon: TrendingUp,
-      text: '日々の業務と数字がつながり、迷いが減る',
+      text: '日々の業務と数字がつながり、<span className="font-bold">迷いが減る</span>',
     },
     {
       icon: Target,
-      text: '「何を続け、何を変えるか」を数字で判断できる',
+      text: '「何を続け、何を変えるか」を<span className="font-bold">数字で判断できる</span>',
     },
     {
       icon: Zap,
-      text: '判断スピードが上がり、余計な悩みが減る',
+      text: '判断スピードが上がり、<span className="font-bold">余計な悩みが減る</span>',
     },
   ];
 
@@ -123,9 +123,7 @@ export function IndividualCourse() {
                     <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
                       <state.icon size={20} className="text-purple-600" />
                     </div>
-                    <p className="text-gray-700 leading-relaxed pt-1">
-                      {state.text}
-                    </p>
+                    <p className="text-gray-700 leading-relaxed pt-1" dangerouslySetInnerHTML={{__html: state.text}} />
                   </motion.div>
                 ))}
               </div>

@@ -22,8 +22,8 @@ export function ServicesIntroRefined() {
                         <button
                             onClick={() => setActiveTab('corporate')}
                             className={`flex items-center gap-3 px-8 py-4 rounded-xl font-bold transition-all ${activeTab === 'corporate'
-                                    ? 'bg-white text-[#0056D2] shadow-sm scale-105'
-                                    : 'text-gray-500 hover:text-gray-700'
+                                ? 'bg-white text-[#0056D2] shadow-sm scale-105'
+                                : 'text-gray-500 hover:text-gray-700'
                                 }`}
                         >
                             <Building2 size={24} />
@@ -32,12 +32,12 @@ export function ServicesIntroRefined() {
                         <button
                             onClick={() => setActiveTab('individual')}
                             className={`flex items-center gap-3 px-8 py-4 rounded-xl font-bold transition-all ${activeTab === 'individual'
-                                    ? 'bg-white text-[#0056D2] shadow-sm scale-105'
-                                    : 'text-gray-500 hover:text-gray-700'
+                                ? 'bg-white text-[#0056D2] shadow-sm scale-105'
+                                : 'text-gray-500 hover:text-gray-700'
                                 }`}
                         >
                             <User size={24} />
-                            個人向けDX講座
+                            個人・小規模事業者向けDX講座
                         </button>
                     </div>
                 </motion.div>

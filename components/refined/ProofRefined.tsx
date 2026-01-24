@@ -1,13 +1,7 @@
 import { motion } from 'framer-motion';
-import { Building, TrendingUp } from 'lucide-react';
+import { Building } from 'lucide-react';
 
 export function ProofRefined() {
-    const stats = [
-        { label: '導入実績', value: '150', unit: '社以上', suffix: '+' },
-        { label: '継続率', value: '98', unit: '%', suffix: '%' },
-        { label: '業務削減', value: '30', unit: '%', suffix: '%' },
-    ];
-
     const cases = [
         {
             company: '製造業A社',
@@ -44,31 +38,7 @@ export function ProofRefined() {
                     <h2 className="text-3xl sm:text-4xl font-bold text-[#333333] mb-4 tracking-tightest">
                         実際に取り組んだ企業の声
                     </h2>
-                    <p className="text-[#64748B] font-semibold uppercase tracking-[0.2em] opacity-60">
-                        Trust & Growth
-                    </p>
                 </motion.div>
-
-                {/* Stats Section */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto mb-24">
-                    {stats.map((stat, index) => (
-                        <div key={index} className="text-center">
-                            <div className="text-7xl font-bold text-[#0056D2] mb-2 font-inter tabular-nums">
-                                {stat.value}{stat.suffix}
-                            </div>
-                            <div className="text-lg font-bold text-[#333333] uppercase tracking-wider">
-                                {stat.label}
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                {/* Logos (Monochrome Placeholder) */}
-                <div className="flex flex-wrap justify-center items-center gap-16 mb-24 opacity-40 grayscale">
-                    {['Corporate', 'Solutions', 'Insight', 'Global', 'Future'].map(l => (
-                        <span key={l} className="text-2xl font-black text-[#1A2B4C] italic">{l}</span>
-                    ))}
-                </div>
 
                 {/* Cases Grid */}
                 <div className="grid md:grid-cols-3 gap-10">

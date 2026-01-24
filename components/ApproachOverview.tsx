@@ -54,12 +54,10 @@ export function ApproachOverview() {
             現場で生まれる情報を整理し、<br />
             判断と改善に使える形へと整えることです。
           </p>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed mb-6">
-            現場で情報が生まれ、<br />
-            経営の判断に使われ、<br />
-            その判断が現場の改善につながる。
+          <p className="text-lg font-bold text-gray-900 max-w-3xl mx-auto leading-relaxed mb-6">
+            現場で情報が生まれ、経営の判断に使われ、その判断が現場の改善につながる。
           </p>
-          <p className="text-xl font-bold text-gray-900 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-900 max-w-3xl mx-auto">
             この循環そのものが、<br />
             売上を生み続ける経営資産です。
           </p>

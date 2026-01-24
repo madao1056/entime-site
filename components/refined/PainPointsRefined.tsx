@@ -26,7 +26,7 @@ export function PainPointsRefined() {
                     <p className="text-xl text-[#64748B] max-w-3xl mx-auto leading-[1.8]">
                         売上や集客など、<br className="hidden sm:block" />
                         外向きの動きを増やす前に、<br className="hidden sm:block" />
-                        社内の仕組みを整えることが重要です。
+                        <span className="font-bold text-[#333333]">社内の仕組みを整えることが重要</span>です。
                     </p>
                 </motion.div>
 

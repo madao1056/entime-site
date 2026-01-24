@@ -60,15 +60,18 @@ export function FinalCTARefined() {
 
                         <div className="space-y-6">
                             {[
-                                'DX全体像ガイド（5つのステップ）',
-                                '法人向けDX研修・助成金活用について',
-                                '最新の導入事例集'
+                                { title: 'DX全体像ガイド', desc: '業務と数字のつなぎ方、5つのステップ' },
+                                { title: '法人向けDX研修詳細', desc: '研修内容・対象企業・研修後の状態' },
+                                { title: '助成金活用の考え方', desc: '最大75%補助の活用方法' }
                             ].map((item, idx) => (
-                                <div key={idx} className="flex items-center gap-4 text-lg">
-                                    <div className="w-6 h-6 rounded-full bg-[#0056D2] flex items-center justify-center text-xs">
+                                <div key={idx} className="flex items-start gap-4">
+                                    <div className="w-6 h-6 rounded-full bg-[#0056D2] flex items-center justify-center text-xs mt-1 shrink-0">
                                         <ArrowRight size={14} />
                                     </div>
-                                    {item}
+                                    <div>
+                                        <div className="text-lg font-bold text-white">{item.title}</div>
+                                        <div className="text-gray-400 text-sm">{item.desc}</div>
+                                    </div>
                                 </div>
                             ))}
                         </div>

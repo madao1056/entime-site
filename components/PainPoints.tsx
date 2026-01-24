@@ -37,7 +37,7 @@ export function PainPoints() {
           <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
             売上や集客など、<br />
             外向きの動きを増やす前に、<br />
-            社内の仕組みを整えることが重要です。
+            <span className="font-bold text-gray-900">社内の仕組みを整えることが重要</span>です。
           </p>
         </motion.div>
 

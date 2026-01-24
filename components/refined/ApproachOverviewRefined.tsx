@@ -49,11 +49,10 @@ export function ApproachOverviewRefined() {
                             現場で生まれる情報を整理し、<br className="hidden sm:block" />
                             判断と改善に使える形へと整えることです。
                         </p>
-                        <p className="text-xl text-[#64748B] max-w-3xl mx-auto leading-[1.8]">
-                            現場で情報が生まれ、経営の判断に使われ、<br className="hidden sm:block" />
-                            その判断が現場の改善につながる。
+                        <p className="text-xl font-bold text-[#1A2B4C] max-w-3xl mx-auto leading-[1.8]">
+                            現場で情報が生まれ、経営の判断に使われ、その判断が現場の改善につながる。
                         </p>
-                        <p className="text-2xl font-bold text-[#1A2B4C] max-w-3xl mx-auto mt-8">
+                        <p className="text-2xl text-[#333333] max-w-3xl mx-auto mt-8">
                             この循環そのものが、<br className="hidden sm:block" />
                             売上を生み続ける経営資産です。
                         </p>

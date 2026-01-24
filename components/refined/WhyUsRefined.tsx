@@ -44,9 +44,8 @@ export function WhyUsRefined() {
                     viewport={{ once: true }}
                     className="text-center mb-24"
                 >
-                    <h2 className="text-4xl font-bold text-[#333333] mb-6 tracking-tightest">
-                        なぜEntimeは、<br />
-                        「現場に定着するDX」ができるのか。
+                    <h2 className="text-3xl sm:text-4xl font-bold text-[#333333] mb-6 tracking-tightest">
+                        EntimeのDXが、他と違う理由
                     </h2>
                 </motion.div>
 

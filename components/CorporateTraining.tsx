@@ -13,19 +13,19 @@ export function CorporateTraining() {
   const afterStates = [
     {
       icon: Clock,
-      text: '毎日17:30に、判断に必要な数字が自動で届く',
+      text: '毎日17:30に、<span className="font-bold">判断に必要な数字が自動で届く</span>',
     },
     {
       icon: MessageSquare,
-      text: '翌朝の朝礼で、数字をもとにした会話が自然に始まる',
+      text: '翌朝の朝礼で、<span className="font-bold">数字をもとにした会話</span>が自然に始まる',
     },
     {
       icon: TrendingUp,
-      text: '感覚ではなく、数字をもとに「次に何を改善するか」が決まる',
+      text: '感覚ではなく、数字をもとに<span className="font-bold">「次に何を改善するか」が決まる</span>',
     },
     {
       icon: Sparkles,
-      text: '業務改善やDXが、特別な取り組みではなく、日々の判断として定着している',
+      text: '業務改善やDXが、特別な取り組みではなく、<span className="font-bold">日々の判断として定着している</span>',
     },
   ];
 
@@ -68,7 +68,7 @@ export function CorporateTraining() {
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 多くの組織では、<br />
                 情報や数字は存在しています。<br />
-                ただ、判断に使える形にはなっていません。
+                ただ、<span className="font-bold text-gray-900">判断に使える形にはなっていません</span>。
               </p>
               <p className="text-lg text-gray-800 leading-relaxed">
                 この研修では、<br />
@@ -122,9 +122,7 @@ export function CorporateTraining() {
                     <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                       <state.icon size={20} className="text-blue-600" />
                     </div>
-                    <p className="text-gray-700 leading-relaxed pt-1">
-                      {state.text}
-                    </p>
+                    <p className="text-gray-700 leading-relaxed pt-1" dangerouslySetInnerHTML={{__html: state.text}} />
                   </motion.div>
                 ))}
               </div>
