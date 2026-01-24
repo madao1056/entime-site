@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { Mail, Phone, Info } from 'lucide-react';
 
 export function FooterRefined() {
